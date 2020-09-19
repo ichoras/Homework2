@@ -34,19 +34,15 @@ function titleFromThumb(thumbnail) {
 
 function indexFromThumb(thumbnail) {
     'use strict';
-    if(thumbnail.getAttribute('data-image-number') === "one") {
+    if (thumbnail.getAttribute('data-image-number') === "one") {
         INDEX = 1;
-    }
-    else if(thumbnail.getAttribute('data-image-number') === "two") {
+    } else if (thumbnail.getAttribute('data-image-number') === "two") {
         INDEX = 2;
-    }
-    else if(thumbnail.getAttribute('data-image-number') === "three") {
+    } else if (thumbnail.getAttribute('data-image-number') === "three") {
         INDEX = 3;
-    }
-    else if(thumbnail.getAttribute('data-image-number') === "four") {
+    } else if (thumbnail.getAttribute('data-image-number') === "four") {
         INDEX = 4;
-    }
-    else if(thumbnail.getAttribute('data-image-number') === "five") {
+    } else if (thumbnail.getAttribute('data-image-number') === "five") {
         INDEX = 5;
     }
     return thumbnail.getAttribute('data-image-number');
@@ -59,23 +55,19 @@ function setDetailsFromThumb(thumbnail) {
 
 function setDetailsFromPrevArrow(arrow) {
     'use strict';
-    if(INDEX === 1) {
+    if (INDEX === 1) {
         INDEX = 5;
         setDetails("img/otter5.jpg", "To Love Somebody", "5");
-    }
-    else if(INDEX === 2) {
+    } else if (INDEX === 2) {
         INDEX = 1;
         setDetails("img/otter1.jpg", "Stayin' Alive", "1");
-    }
-    else if(INDEX === 3) {
+    } else if (INDEX === 3) {
         INDEX = 2;
         setDetails("img/otter2.jpg", "How Deep Is Your Love", "2");
-    }
-    else if(INDEX === 4) {
+    } else if (INDEX === 4) {
         INDEX = 3;
         setDetails("img/otter3.jpg", "You Should Be Dancing", "3");
-    }
-    else if(INDEX === 5) {
+    } else if (INDEX === 5) {
         INDEX = 4;
         setDetails("img/otter4.jpg", "Night Fever", "4");
     }
@@ -83,23 +75,19 @@ function setDetailsFromPrevArrow(arrow) {
 
 function setDetailsFromNextArrow(arrow) {
     'use strict';
-    if(INDEX === 1) {
+    if (INDEX === 1) {
         INDEX = 2;
         setDetails("img/otter2.jpg", "How Deep Is Your Love", "2");
-    }
-    else if(INDEX === 2) {
+    } else if (INDEX === 2) {
         INDEX = 3;
         setDetails("img/otter3.jpg", "You Should Be Dancing", "3");
-    }
-    else if(INDEX === 3) {
+    } else if (INDEX === 3) {
         INDEX = 4;
         setDetails("img/otter4.jpg", "Night Fever", "4");
-    }
-    else if(INDEX === 4) {
+    } else if (INDEX === 4) {
         INDEX = 5;
         setDetails("img/otter5.jpg", "To Love Somebody", "5");
-    }
-    else if(INDEX === 5) {
+    } else if (INDEX === 5) {
         INDEX = 1;
         setDetails("img/otter1.jpg", "Stayin' Alive", "1");
     }
